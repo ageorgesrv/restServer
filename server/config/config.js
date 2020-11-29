@@ -15,7 +15,8 @@ let urlDB;
  {
      urlDB = 'mongodb://localhost:27017/Cafe';
  }else {
-    urlDB = 'mongodb+srv://srvgeo:Jorg3arI@cluster0.uhnnf.mongodb.net/cafe';
+    urlDB = process.env.MONGO_URI;
 }
 process.env.URLDB = urlDB;
 
+//mongodb+srv://srvgeo:<password>@cluster0.uhnnf.mongodb.net/<dbname>?retryWrites=true&w=majority
