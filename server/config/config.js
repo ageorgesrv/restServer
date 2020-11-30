@@ -36,3 +36,8 @@ let urlDB;
 process.env.URLDB = urlDB;
 
 //mongodb+srv://srvgeo:<password>@cluster0.uhnnf.mongodb.net/<dbname>?retryWrites=true&w=majority
+
+//======================
+//   Google Client ID
+//======================
+process.env.CLIENT_ID = process.env.CLIENT_ID || '199841206076-dseq1lj9c6hkhfp7ht931qhmhn5e9i36.apps.googleusercontent.com';
